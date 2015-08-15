@@ -1,7 +1,7 @@
 ---
 layout: post
+title: "Redis-Cluster初探"
 category : redis
-tagline: "Redis-Cluster初探"
 tags : [distributed, redis3.x]
 ---
 {% include JB/setup %}
