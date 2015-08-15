@@ -1,12 +1,13 @@
 ---
 layout: post
 category : redis
-tagline: "Redis-Cluster"
+tagline: "Redis-Cluster初探"
 tags : [distributed, redis3.x]
 ---
 {% include JB/setup %}
 网上看着搭建一套redis集群好麻烦，搜了一圈blog,发现还是官网靠谱[Redis cluster tutorial](http://redis.io/topics/cluster-tutorial)
-安装ruby（ruby安装我还是比较烦的，最开始ruby安装复杂，切jekyll需要本地编译而放弃了）
+
+先安装ruby（ruby安装我还是比较烦的，最开始因为ruby安装复杂，且jekyll需要本地编译环境而放弃了）
 
 解压修改配置文件redis.conf,然后依次拷贝到其他节点，注意修改端口
 
