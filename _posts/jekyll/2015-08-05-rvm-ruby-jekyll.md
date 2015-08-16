@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "jekyll的本地环境配置及主题更换(rvm管理ruby)"
+title: "Jekyll的本地环境配置及主题更换(rvm管理ruby)"
 keywords: ["jekyll", "rvm","ruby","jekyll-bootstrap"]
 description: "md语法测试"
 category: "jekyll"
