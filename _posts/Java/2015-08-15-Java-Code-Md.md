@@ -1,5 +1,5 @@
 ---
-title: schedule and encode
+title: Kafka Schedule and Rmq NettyEncoder
 tagline: ""
 category : kafka
 layout: post
