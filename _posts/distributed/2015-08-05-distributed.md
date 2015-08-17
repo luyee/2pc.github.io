@@ -8,7 +8,7 @@ tags: ["distributed"]
 ---
 #### Distributed System Guides
 
-[RAFT](http://raftconsensus.github.io/#implementations)
+[Raft](http://raftconsensus.github.io/#implementations)
 
 [Two-phase commit protocol](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)
 
