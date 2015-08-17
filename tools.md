@@ -6,7 +6,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-Socail
+Social
 --------------------------------------------
 
 * **github**: [2pc](https://2pc.github.io)
