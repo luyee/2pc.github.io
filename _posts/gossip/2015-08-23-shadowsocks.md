@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Shadowsocks"
+title: "Shadowsocks的作者被请喝茶"
 keywords: ["shadowsocks"]
 description: "Shadowsocks"
 category: "VPN"
