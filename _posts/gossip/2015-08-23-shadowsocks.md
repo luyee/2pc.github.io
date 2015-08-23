@@ -7,7 +7,7 @@ category: "VPN"
 tags: ["Shodawsocks",GFW"]
 ---
 
-###不得不说，你国是一个神奇的国度
+###不得不说，你国确实是一个神奇的国度
 
  周末醒来，在OSC上刷了下动弹，发现Shadowsocks的作者被请喝茶了，停止维护shadowsocks,
  
