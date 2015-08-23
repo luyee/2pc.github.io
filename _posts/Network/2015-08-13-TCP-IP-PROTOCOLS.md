@@ -26,7 +26,7 @@ tags: ["TCP/IP","Protocols","NetWork"]
  
 ### 工具
  
-##### 1,tcpndump
+##### 1,tcpdump
  
 ##### 2,traceroute
  
