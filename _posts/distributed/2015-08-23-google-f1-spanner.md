@@ -63,7 +63,7 @@ Spanner使用TrueTime来控制并发，实现外部一致性。支持以下几�
 
 
 
-论文(EN)地址：
+#### 论文(EN)地址：
 
 [墙外-GoogleReseach](http://research.google.com/archive/spanner.html)
 
@@ -72,3 +72,6 @@ Spanner使用TrueTime来控制并发，实现外部一致性。支持以下几�
 中文翻译
 
 [Google Spanner (中文版)--厦大数据库实验室](http://dblab.xmu.edu.cn/post/google-spanner/#implementation)
+
+#### References:
+[论文阅读笔记 - Spanner: Google'sGlobally-Distributed Database](http://blog.csdn.net/colorant/article/details/9126921)
