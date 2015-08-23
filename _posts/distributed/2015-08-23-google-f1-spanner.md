@@ -12,9 +12,9 @@ tags: ["distributed","Spanner"]
 
    Spanner是可扩展的、多版本、全球分布式、同步复制数据库。是数据分布在全球范围内的系统，支持外部一致性的分布式事务。
 
-#### 名词解析
+#### 1 Introduction
 
-#### Spanner结构
+#### 2 Implementation
 ![](http://7xla7c.com1.z0.glb.clouddn.com/Spanserver)
 * Universemaster: 监控这个universe里zone级别的状态信息
 
@@ -26,13 +26,40 @@ tags: ["distributed","Spanner"]
 
 * Spanserver：相当于BigTable的ThunkServer。用于存储数据。
 
-####  SpannerServer 软件栈
+#####  2.1 SpannerServer 软件栈
 
 ![](http://7xla7c.com1.z0.glb.clouddn.com/spanner-soft-stack)
 
+#####  2.2 Directories and Placement
+
+#####  2.3 Data Model
 
 
-#### TrueTime
+
+#### 3 TrueTime
+
+#### 4 ConCurrency Control
+
+##### 4.1 TimeStamp Managerment
+
+##### 4.2 Details 
+
+#### 5 Evaluation 
+
+##### 5.1 MicroBenchmarks （微基准测试）
+
+##### 5.2 Availability（可用性）
+
+##### 5.3 TrueTime
+
+##### 5.4 F1
+
+#### 6 Related Work
+
+#### 7 Future Work
+
+
+
 
 论文(EN)地址：
 
