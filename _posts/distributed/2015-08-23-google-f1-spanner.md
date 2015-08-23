@@ -16,14 +16,11 @@ tags: ["distributed","Spanner"]
 
 #### 2 Implementation
 ![](http://7xla7c.com1.z0.glb.clouddn.com/Spanserver)
+
 * Universemaster: 监控这个universe里zone级别的状态信息
-
 * Placement driver：提供跨区数据迁移时管理功能
-
 * Zonemaster：相当于BigTable的Master。管理Spanserver上的数据。
-
 * Location proxy：存储数据的Location信息。客户端要先访问他才知道数据在那个Spanserver上。
-
 * Spanserver：相当于BigTable的ThunkServer。用于存储数据。
 
 #####  2.1 SpannerServer 软件栈
