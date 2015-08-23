@@ -17,4 +17,4 @@ tags: ["Shodawsocks",GFW"]
  
 这也许是一个好事，说明xxx已经在技术上匮乏了，大概或许技术上真的禁不了了，只好禁人。
  
-AnyWay ,Thx,shadowsock的作者
+AnyWay ,Thx,shadowsock的作者@clowwindy
