@@ -40,7 +40,12 @@ tags: ["distributed","Spanner"]
 ##### 4.1 TimeStamp Managerment
 
 ##### 4.2 Details 
-
+Spanner使用TrueTime来控制并发，实现外部一致性。支持以下几种事务。
+> 
+* 读写事务RW
+* 只读事务RO
+* 快照读，客户端提供时间戳
+* 快照读，客户端提供时间范围
 #### 5 Evaluation 
 
 ##### 5.1 MicroBenchmarks （微基准测试）
