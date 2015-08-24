@@ -16,7 +16,8 @@ tags: ["distributed","Spanner"]
 
 #### 2 Implementation
 ![](http://7xla7c.com1.z0.glb.clouddn.com/Spanserver)
-
+* Universe。一个Spanner部署实例称之为一个Universe。目前全世界有3个。一个开发，一个测试，一个线上。因为一个Universe就能覆盖全球，不需要多个。
+* Zones. 每个Zone相当于一个数据中心，一个Zone内部物理上必须在一起。而一个数据中心可能有多个Zone。可以在运行时添加移除Zone。一个Zone可以理解为一个BigTable部署实例。
 * Universemaster: 监控这个universe里zone级别的状态信息
 * Placement driver：提供跨区数据迁移时管理功能
 * Zonemaster：相当于BigTable的Master。管理Spanserver上的数据。
