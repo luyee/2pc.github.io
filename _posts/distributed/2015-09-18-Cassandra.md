@@ -1,5 +1,15 @@
 ---
 layout: post
+title: "Google Spanner F1"
+keywords: ["distributed"]
+description: "Google Spanner F1"
+category: "distributed"
+tags: ["distributed","Spanner"]
+---
+### Google Spanner and F1 
+
+---
+layout: post
 title: "Cassandra种种"
 description: "Cassandra种种"
 category: "distributed"
