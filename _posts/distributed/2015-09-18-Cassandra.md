@@ -6,6 +6,7 @@ description: "TiDB-A Distributed SQL Database"
 category: "distributed"
 tags: ["distributed"，"Cassandra"]
 ---
+
 #### 一致性等级ConsistencyLevel
 ```
 ANY         (0),
