@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Cassandra种种"
-description: "Cassandra种种"
+title: "Google Spanner F1"
+keywords: ["distributed"]
+description: "Google Spanner F1"
 category: "distributed"
-tags: ["distributed"，"Cassandra"]
+tags: ["distributed","Spanner"]
 ---
 
 
