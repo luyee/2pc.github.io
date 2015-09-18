@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Cassandra种种"
-keywords: ["distributed","TiDB"]
-description: "TiDB-A Distributed SQL Database"
+description: "Cassandra种种"
 category: "distributed"
 tags: ["distributed"，"Cassandra"]
 ---
