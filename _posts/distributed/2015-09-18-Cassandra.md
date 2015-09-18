@@ -5,6 +5,14 @@ description: "Cassandra种种"
 category: "distributed"
 tags: ["distributed"，"Cassandra"]
 ---
+### Google Spanner and F1 
+---
+layout: post
+title: "Cassandra种种"
+description: "Cassandra种种"
+category: "distributed"
+tags: ["distributed"，"Cassandra"]
+---
 
 #### 一致性等级ConsistencyLevel
 ```
