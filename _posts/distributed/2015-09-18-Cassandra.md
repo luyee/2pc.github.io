@@ -9,6 +9,7 @@ tags: ["distributed","Cassandra"]
 
 #### 一致性等级ConsistencyLevel
 [Configuring data consistency-官方文档Apache Cassandra™ 2.0](http://docs.datastax.com/en/cassandra/2.0/cassandra/dml/dml_config_consistency_c.html)
+
 ```
 ANY         (0),
 ONE         (1),
