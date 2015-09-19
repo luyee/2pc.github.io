@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lucene Score"
+title: "Lucene评分机制(Score)"
 keywords: ["Lucene","Search"]
 description: "Lucene Score"
 category: "Lucene"
