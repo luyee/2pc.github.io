@@ -20,8 +20,8 @@ $$score(q,d)=coord(q,d)*queryNorm(q)\sum_{t\ in\ d }(tf( t\ in\ d )*idf(t)^2*t.g
 * idf(t) 词的逆词频
 * coord(q,d) 评分因子。越多的查询项(Term)在一个文档中，说明这些文档的匹配程序越高
 * queryNorm(q) 标准化因子，用于查询时比较
-* t.getBoost() 权重，这个可以在查询的时候给定，也可以在索引的时候给定
-* norm(t,d)
+* t.getBoost() 权重，这个可以在查询的时候给定（如:lucene^2），也可以在索引的时候由setBoost()给定
+* norm(t,d)   字段加权(Field boost ), 文档加权(Document boost)和长度因子由字段内的 Token 的个数来计算此值，字段越短，评分越高，在做索引的时候由 Similarity.lengthNorm 计算,norm这个值在索引的时候会encode 成一个byte 保存在索引中，搜索的时候，再把索引中 norm 值decode成一个float值，在这个过程中会有精度丢失，不保证可逆，如decode(encode(0.89)) = 0.75。
 
 #### 词频tf(t in d) 计算公式(默认DefaultSimilarity )
 
@@ -43,9 +43,4 @@ $$ queryNorm(q)=queryNorm(sumOfSquaredWeights)=\frac{1}{\sqrt{sumOfSquaredWeight
 
 $$sumOfSquaredWeights= q.getBoost() ^2*\sum_{t\ in\ q}{(idf(t)* t.getBoost())^2}$$
 
-#### norm(t,d)计算公式
-
 $$norm(t,d)= lengthNorm*\prod_{field\ f\ in\ d\ named\ as\ t}f.boost() $$
-
-
-
