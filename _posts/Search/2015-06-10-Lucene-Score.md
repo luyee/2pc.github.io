@@ -43,4 +43,6 @@ $$ queryNorm(q)=queryNorm(sumOfSquaredWeights)=\frac{1}{\sqrt{sumOfSquaredWeight
 
 $$sumOfSquaredWeights= q.getBoost() ^2*\sum_{t\ in\ q}{(idf(t)* t.getBoost())^2}$$
 
+#### norm(t,d)的计算公式为:
+
 $$norm(t,d)= lengthNorm*\prod_{field\ f\ in\ d\ named\ as\ t}f.boost() $$
