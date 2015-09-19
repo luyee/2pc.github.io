@@ -19,3 +19,6 @@ $$score(q,d)=coord(q,d)*queryNorm(q)\sum_{t\ in\ d }(tf( t\ in\ d )*idf(t)^2*t.g
 *  tf(t in d) 表示词频，Term在当前文档中出现的次数
 * idf(t) 词的逆词频
 * coord(q,d)
+* queryNorm(q)
+* t.getBoost()
+* norm(t,d)
