@@ -39,7 +39,7 @@ $$coord(q,d)=\frac{overlap}{maxOverlap}$$
 
 $$ queryNorm(q)=queryNorm(sumOfSquaredWeights)=\frac{1}{\sqrt{sumOfSquaredWeights}}$$
 
-这里sumOfSquaredWeights的计算公式为:
+#### 这里sumOfSquaredWeights的计算公式为:
 
 $$sumOfSquaredWeights= q.getBoost() ^2*\sum_{t\ in\ q}{(idf(t)* t.getBoost())^2}$$
 
