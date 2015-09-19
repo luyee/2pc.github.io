@@ -27,7 +27,25 @@ $$score(q,d)=coord(q,d)*queryNorm(q)\sum_{t\ in\ d }(tf( t\ in\ d )*idf(t)^2*t.g
 
 $$tf(t\ in\ d )=sqrt{frequency}$$
 
-#### 逆词频idf(t计算公式(默认DefaultSimilarity )
+#### 逆词频idf(t)计算公式(默认DefaultSimilarity )
 
 $$idf=1+\log\frac{numDocs}{docFreq+1}$$
+
+#### coord(q,d) 计算公式(DefaultSimilarity)
+
+$$coord(q,d)=\frac{overlap}{maxOverlap}$$
+
+#### queryNorm(q)计算公式 (DefaultSimilarity)
+
+$$ queryNorm(q)=queryNorm(sumOfSquaredWeights)=\frac{1}{\sqrt{sumOfSquaredWeights}}$$
+
+这里sumOfSquaredWeights的计算公式为:
+
+$$sumOfSquaredWeights= q.getBoost() ^2*\sum_{t\ in\ q}{(idf(t)* t.getBoost())^2}$$
+
+#### norm(t,d)计算公式
+
+$$norm(t,d)= lengthNorm*\prod_{field\ f\ in\ d\ named\ as\ t}f.boost() $$
+
+
 
