@@ -23,7 +23,11 @@ $$score(q,d)=coord(q,d)*queryNorm(q)\sum_{t\ in\ d }(tf( t\ in\ d )*idf(t)^2*t.g
 * t.getBoost() 权重，这个可以在查询的时候给定，也可以在索引的时候给定
 * norm(t,d)
 
-#### 词频tf(t in d) 计算公式
+#### 词频tf(t in d) 计算公式(默认DefaultSimilarity )
 
-$$tf(t in d)=sqrt{frequency}$$
+$$tf(t\ in\ d )=sqrt{frequency}$$
+
+#### 逆词频idf(t计算公式(默认DefaultSimilarity )
+
+$$idf=1+\log\frac{numDocs}{docFreq+1}$$
 
