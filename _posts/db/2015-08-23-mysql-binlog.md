@@ -14,6 +14,6 @@ tags: ["mysql","binlog"]
 * 模式2 Statement Leve
     每一条会修改数据的sql都会记录到 master的bin-log中
 * 模式3 Mixed
-    幻读
+    
 
 
