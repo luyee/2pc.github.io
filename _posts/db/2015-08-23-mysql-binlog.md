@@ -7,7 +7,7 @@ category: "MySQL"
 tags: ["mysql","binlog"]
 ---
 
-### 事务隔离级别
+###  三种模式
 
 * 模式1 Row Level
     日志中会记录成每一行数据被修改的形式
