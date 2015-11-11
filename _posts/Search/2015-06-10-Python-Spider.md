@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "爬虫相关"
-keywords: ["spider","爬虫"，"python"]
+keywords: ["spider","爬虫","python"]
 description: "爬虫相关"
 category: "spider"
-tags: ["spider","爬虫"，"python"]
+tags: ["spider","爬虫","python"]
 ---
 python 爬虫相关
 ### pyspider 分布式架构 WebUI
