@@ -38,3 +38,6 @@ python 爬虫相关
 [Python爬虫实战四之抓取淘宝MM照片](http://cuiqingcai.com/1001.html)
 
 [Scrapy爬虫抓取动态网站](http://chenqx.github.io/2014/12/23/Spider-Advanced-for-Dynamic-Website-Crawling/)
+
+[如何让你的scrapy爬虫不再被ban之二（利用第三方平台crawlera做scrapy爬虫防屏蔽）](http://www.cnblogs.com/rwxwsblog/p/4582127.html?utm_source=tuicool&utm_medium=referral)
+
