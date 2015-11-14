@@ -41,3 +41,6 @@ python 爬虫相关
 
 [如何让你的scrapy爬虫不再被ban之二（利用第三方平台crawlera做scrapy爬虫防屏蔽）](http://www.cnblogs.com/rwxwsblog/p/4582127.html?utm_source=tuicool&utm_medium=referral)
 
+pip安装 镜像： 如： https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/
+
+pip install scrapy -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/
