@@ -19,7 +19,7 @@ python 爬虫相关
 ### cola 分布式 weibo wiki
 [cola github](https://github.com/chineking/cola)
 
-### scrapy 
+### scrapy （support python2.7）
 
 [scrapy doc](http://scrapy-chs.readthedocs.org/zh_CN/latest/index.html#)
 
