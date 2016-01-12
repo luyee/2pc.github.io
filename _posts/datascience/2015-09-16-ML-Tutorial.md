@@ -23,7 +23,7 @@ tags: ["ML","Datascience"]
 >>> OneVsRestClassifier(LinearSVC(random_state=0)).fit(X, y).predict(X)
 ```
 
-#####  OvO （One-Vs-The-Rest）
+#####  OvO （One-Versus-One）
 
 ```
 >>> from sklearn import datasets
