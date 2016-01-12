@@ -12,7 +12,7 @@ tags: ["ML","Datascience"]
 
 #####  OvR （One-Vs-The-Rest）
 
-基于iris数据集体的多分类问题
+基于iris数据集的多分类问题
 
 ```
 >>> from sklearn import datasets
