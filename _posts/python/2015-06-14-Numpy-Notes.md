@@ -19,3 +19,5 @@ shape()维度
 >>> np.shape(arr)[1]
 3
 ```
+
+[numpy函数-豆瓣](http://www.douban.com/note/363857295/)
