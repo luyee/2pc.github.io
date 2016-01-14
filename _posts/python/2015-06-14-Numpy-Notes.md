@@ -1,0 +1,13 @@
+
+
+shape()维度
+```
+>>> import numpy as np
+>>> arr=np.array([[1,2,3], [4,5,6]])
+>>> np.shape(arr)
+(2, 3)
+>>> np.shape(arr)[0]
+2
+>>> np.shape(arr)[1]
+3
+```
