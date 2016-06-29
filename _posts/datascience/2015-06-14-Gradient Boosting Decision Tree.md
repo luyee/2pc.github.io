@@ -54,3 +54,27 @@ for (int j=ninf.index_b; j< ninf.index_e; j++)
  	 	}
 ```
 
+节点的预测值为改节点上所有sample的label的均值
+ranklib中MART的实现
+
+```
+protected void updateTreeOutput(RegressionTree rt)
+{
+	List<Split> leaves = rt.leaves();
+	for(int i=0;i<leaves.size();i++)
+	{
+		float s1 = 0.0F;
+		Split s = leaves.get(i);
+		int[] idx = s.getSamples();
+		
+		System.out.println("leaves(i)" + i +" idx.length: "+idx.length);
+		for(int j=0;j<idx.length;j++)
+		{
+			int k = idx[j];
+			s1 += pseudoResponses[k];
+		}
+		s.setOutput(s1/idx.length);
+	}
+}
+```
+
