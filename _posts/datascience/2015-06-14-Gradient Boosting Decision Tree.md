@@ -28,30 +28,30 @@ Best split计算
 
 ```
 for (int j=ninf.index_b; j< ninf.index_e; j++)
- 	 	{
- 	 	// d = y_result_score[data_set->order_i[j]];
-			d = data_set->y_list[data_set->order_i[j]];
- 	 		left_sum += d;
- 	 		right_sum -= d;
- 	 		left_num++;
- 	 		right_num--;
-			if (data_set->fv[j] < data_set->fv[j+1])
- 	 		{/** 均方误差Mean Squared Error, MSE）最小? */
-				crit = (left_sum * left_sum / left_num) + (right_sum * right_sum / right_num) - ninf.critparent;
- 	 			if (crit > critvar) 
-				{
-					tmpsplit = (data_set->fv[j] + data_set->fv[j+1]) / 2.0; // 实际分割用的feature value
-					critvar = crit;
-				}
- 	 		}
-		}
- 	
-		if (critvar > critmax) // 如果这个feature最终的critvar > cirtmax, 保存信息
- 	 	{
-			spinf->bestsplit = tmpsplit; // split feature vale
- 	 		spinf->bestid = fid; // split feature id
- 	 		critmax = critvar; // split crit vaule
- 	 	}
+{
+// d = y_result_score[data_set->order_i[j]];
+d = data_set->y_list[data_set->order_i[j]];
+  left_sum += d;
+  right_sum -= d;
+  left_num++;
+  right_num--;
+if (data_set->fv[j] < data_set->fv[j+1])
+  {/** 均方误差Mean Squared Error, MSE）最小? */
+	crit = (left_sum * left_sum / left_num) + (right_sum * right_sum / right_num) - ninf.critparent;
+  	if (crit > critvar) 
+	{
+		tmpsplit = (data_set->fv[j] + data_set->fv[j+1]) / 2.0; // 实际分割用的feature value
+		critvar = crit;
+	}
+  }
+}
+
+if (critvar > critmax) // 如果这个feature最终的critvar > cirtmax, 保存信息
+{
+spinf->bestsplit = tmpsplit; // split feature vale
+  spinf->bestid = fid; // split feature id
+  critmax = critvar; // split crit vaule
+}
 ```
 
 节点的输出值为该节点上所有sample的label的均值
