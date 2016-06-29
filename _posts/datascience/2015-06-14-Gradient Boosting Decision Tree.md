@@ -54,7 +54,7 @@ for (int j=ninf.index_b; j< ninf.index_e; j++)
  	 	}
 ```
 
-节点的预测值为改节点上所有sample的label的均值
+节点的输出值为该节点上所有sample的label的均值
 ranklib中MART的实现
 
 ```
