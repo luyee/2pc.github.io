@@ -10,4 +10,33 @@ tags: ["ML","Datascience"]
 
 可以参考文档[Google tensorflow Download and Setup](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#virtualenv-installation）,有很多中方式)
 
-这里选择了[Virtualenv installation](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#virtualenv-installation)
+在自己的Mac上安装，这里选择了[Virtualenv installation](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#virtualenv-installation)，也可以选择Anaconda或者其他安装方式
+
+Install pip and Virtualenv:
+
+```
+sudo  pip  install --upgrade virtualenv 
+```
+
+Create a Virtualenv environment in the directory ~/tensorflow:
+
+```
+virtualenv   --system-site-packages  ./tensorflow
+```
+Activate the environment and use pip to install TensorFlow inside it:
+
+```
+tensorflow/bin/activate
+pip install --upgrade https://storage.googleapis.com/tensorflow/mac/tensorflow-0.7.1-cp27-none-any.whl
+```
+When you are done using TensorFlow, deactivate the environment.
+
+```
+(tensorflow)$ deactivate
+```
+To use TensorFlow later you will have to activate the Virtualenv environment again:
+
+```
+source  tensorflow/bin/activate
+```
+
