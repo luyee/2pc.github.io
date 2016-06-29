@@ -7,9 +7,9 @@ category: "distributed"
 tags: ["distributed","Paxos","Zookeeper"]
 ---
 
-## Zookeepeer 通信以及心跳机制
+### Zookeepeer 通信以及心跳机制
 
-## Zookeepeer Leader 选举
+### Zookeepeer Leader 选举
 
-## Zookeepeer 读写流程
+### Zookeepeer 读写流程
 
