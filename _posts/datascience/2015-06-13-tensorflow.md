@@ -39,4 +39,22 @@ To use TensorFlow later you will have to activate the Virtualenv environment aga
 ```
 source  tensorflow/bin/activate
 ```
+ 测试是否安装ok
+ 
+ ```
+ (tensorflow) lupingdeMacBook-Pro:develop luping$ python
+Python 2.7.5 (default, Aug 25 2013, 00:04:04) 
+[GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+>>> hello = tf.constant('Hello, TensorFlow!')
+>>> sess = tf.Session()
+>>> print(sess.run(hello))
+Hello, TensorFlow!
+>>> a = tf.constant(10)
+>>> b = tf.constant(32)
+>>> print(sess.run(a + b))
+42
+>>> 
+ ```
 
