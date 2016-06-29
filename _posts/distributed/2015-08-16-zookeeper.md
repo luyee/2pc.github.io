@@ -4,7 +4,7 @@ title: "Zookeeper"
 keywords: ["distributed"]
 description: "Paxos协议"
 category: "distributed"
-tags: ["distributed","Paxos"，"Zookeeper"]
+tags: ["distributed","Paxos","Zookeeper"]
 ---
 
 ## Zookeepeer 通信以及心跳机制
