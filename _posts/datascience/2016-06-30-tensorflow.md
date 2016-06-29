@@ -42,7 +42,7 @@ source  tensorflow/bin/activate
  测试是否安装ok
  
  ```
- (tensorflow) lupingdeMacBook-Pro:develop luping$ python
+ (tensorflow) bogon:develop luping$ python
 Python 2.7.5 (default, Aug 25 2013, 00:04:04) 
 [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -56,5 +56,11 @@ Hello, TensorFlow!
 >>> print(sess.run(a + b))
 42
 >>> 
+ ```
+ 
+实例学习[TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples)
+ 
+ ```
+bogon$ git clone https://github.com/aymericdamien/TensorFlow-Examples.git
  ```
 
