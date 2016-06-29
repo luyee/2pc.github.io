@@ -59,8 +59,29 @@ Hello, TensorFlow!
  ```
  
 实例学习[TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples)
+这个感觉挺好的，有代码，notebook。相关算法有Linear Regression,Logistic Regression，Convolutional Neural Network，Recurrent Neural Network (LSTM) .etc
  
  ```
 bogon$ git clone https://github.com/aymericdamien/TensorFlow-Examples.git
+ ```
+ 运行一个CNN的例子
+ ```
+ (tensorflow) lupingdeMacBook-Pro:3 - Neural Networks luping$ python convolutional_network.py 
+Succesfully downloaded train-images-idx3-ubyte.gz 9912422 bytes.
+Extracting /tmp/data/train-images-idx3-ubyte.gz
+/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/gzip.py:268: VisibleDeprecationWarning: converting an array with ndim > 0 to an index will result in an error in the future
+  chunk = self.extrabuf[offset: offset + size]
+/Users/luping/develop/tensorflow/TensorFlow-Examples/examples/3 - Neural Networks/input_data.py:35: VisibleDeprecationWarning: converting an array with ndim > 0 to an index will result in an error in the future
+  data = data.reshape(num_images, rows, cols, 1)
+Succesfully downloaded train-labels-idx1-ubyte.gz 28881 bytes.
+Extracting /tmp/data/train-labels-idx1-ubyte.gz
+Succesfully downloaded t10k-images-idx3-ubyte.gz 1648877 bytes.
+Extracting /tmp/data/t10k-images-idx3-ubyte.gz
+Succesfully downloaded t10k-labels-idx1-ubyte.gz 4542 bytes.
+Extracting /tmp/data/t10k-labels-idx1-ubyte.gz
+Iter 1280, Minibatch Loss= 30910.765625, Training Accuracy= 0.25781
+Iter 2560, Minibatch Loss= 16850.156250, Training Accuracy= 0.39062
+Iter 3840, Minibatch Loss= 18461.570312, Training Accuracy= 0.51562
+Iter 5120, Minibatch Loss= 10053.062500, Training Accuracy= 0.67188
  ```
 
