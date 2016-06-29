@@ -83,5 +83,9 @@ Iter 1280, Minibatch Loss= 30910.765625, Training Accuracy= 0.25781
 Iter 2560, Minibatch Loss= 16850.156250, Training Accuracy= 0.39062
 Iter 3840, Minibatch Loss= 18461.570312, Training Accuracy= 0.51562
 Iter 5120, Minibatch Loss= 10053.062500, Training Accuracy= 0.67188
+...
+Iter 99840, Minibatch Loss= 738.179016, Training Accuracy= 0.91406
+Optimization Finished!
+Testing Accuracy: 0.941406
  ```
 
