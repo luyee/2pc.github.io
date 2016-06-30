@@ -9,8 +9,11 @@ tags: ["distributed","Search","Elasticsearch"]
 
 ### 安装配置
 这里使用的2.3.3版本，这个版本已经不能用root启动了。需要先给Elasticsearch启动，建立一个账户
->Elasticsearch运行账户：Elasticsearch
->Elasticsearch环境路径：/data/elasticsearch
+
+```
+Elasticsearch运行账户：Elasticsearch
+Elasticsearch环境路径：/data/elasticsearch
+```
 
 新增用户并将/data/elasticsearch目录权限给Elasticsearch用户组
 
