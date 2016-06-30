@@ -30,4 +30,10 @@ su elasticsearch
 cd /data/elasticsearch/elasticsearch-2.3.3
 bin/elasticsearch
 ```
+安装ik分词,[medcl](https://github.com/medcl)大神更新很快
+
+```
+wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v1.9.3/elasticsearch-analysis-ik-1.9.3.zip
+```
+
 
