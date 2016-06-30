@@ -17,5 +17,7 @@ mkdir  /data/elasticsearch/
 useradd elasticsearch
 passwd  elasticsearch
 chown -R elasticsearch:elasticsearch  /data/elasticsearch/
+cd /data/elasticsearch/
+wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/tar/elasticsearch/2.3.3/elasticsearch-2.3.3.tar.gz
 ```
 
