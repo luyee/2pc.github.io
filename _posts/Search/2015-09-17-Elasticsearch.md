@@ -34,6 +34,7 @@ bin/elasticsearch
 
 ```
 wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v1.9.3/elasticsearch-analysis-ik-1.9.3.zip
+unzip  elasticsearch-analysis-ik-1.9.3.zip  -d  ./plugins/ik
 ```
 
 
