@@ -8,7 +8,23 @@ tags: ["distributed","Search","Elasticsearch"]
 ---
 
 ### 安装配置
-这里使用的2.3.3版本，这个版本其实是2.x已经不能用root启动了。当也可以通过参数-Des.insecure.allow.root=true 
+这里使用的2.3.3版本，这个版本其实是2.x已经不能用root直接启动了。
+具体参考[Bootstrap.java](https://github.com/elastic/elasticsearch/blob/93de1ed6068e8e9f35897f623efe00aa3cfafeea/core/src/main/java/org/elasticsearch/bootstrap/Bootstrap.java#L89)中的代码
+
+```
+public static void initializeNatives(Path tmpFile, boolean mlockAll, boolean seccomp, boolean ctrlHandler) {
+  final ESLogger logger = Loggers.getLogger(Bootstrap.class);
+
+  // check if the user is running as root, and bail
+  if (Natives.definitelyRunningAsRoot()) {
+      if (Boolean.parseBoolean(System.getProperty("es.insecure.allow.root"))) {
+          logger.warn("running as ROOT user. this is a bad idea!");
+      } else {
+          throw new RuntimeException("don't run elasticsearch as root.");
+      }
+  }
+```
+可以通过参数-Des.insecure.allow.root=true 来实现
 ```
 bin/elasticsearch  -Des.insecure.allow.root=true 
 ```
