@@ -57,5 +57,16 @@ bin/elasticsearch
 wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v1.9.3/elasticsearch-analysis-ik-1.9.3.zip
 unzip  elasticsearch-analysis-ik-1.9.3.zip  -d  ./plugins/ik
 ```
+[2.3版本的参考文档](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/index.html)，可以看看
+Breaking changes
+>
+.[2.3-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.3.html)
+.[2.2-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.2.html)
+.[2.1-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.1.html)
+.[2.0-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.0.html)
+.[1.6-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-1.6.html)
+.[1.4-Breaking changes]](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-1.4.html)
+[1.0-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-1.0.html)
+
 
 
