@@ -43,7 +43,8 @@ source  tensorflow/bin/activate
  测试是否安装ok
  
  
- ```
+ ```python
+ 
 tensorflow) bogon:develop bogon$ python
 Python 2.7.5 (default, Aug 25 2013, 00:04:04) 
 [GCC 4.2.1 Compatible Apple LLVM 5.0 (clang-500.0.68)] on darwin
@@ -71,6 +72,7 @@ bogon$ git clone https://github.com/aymericdamien/TensorFlow-Examples.git
  运行一个CNN的例子
  
  ```
+ 
 tensorflow) bogon:3 - Neural Networks bogon$ python convolutional_network.py 
 Succesfully downloaded train-images-idx3-ubyte.gz 9912422 bytes.
 Extracting /tmp/data/train-images-idx3-ubyte.gz
