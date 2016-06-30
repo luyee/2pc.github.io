@@ -43,7 +43,7 @@ source  tensorflow/bin/activate
  测试是否安装ok
  
  
- ```python
+```python
  
 tensorflow) bogon:develop bogon$ python
 Python 2.7.5 (default, Aug 25 2013, 00:04:04) 
@@ -59,19 +59,19 @@ Hello, TensorFlow!
 >>> print(sess.run(a + b))
 42
 >>> 
- ```
+```
  
 实例学习[TensorFlow-Examples](https://github.com/aymericdamien/TensorFlow-Examples)
 这个感觉挺好的，有代码，notebook。相关算法有Linear Regression,Logistic Regression，Convolutional Neural Network，Recurrent Neural Network (LSTM) .etc
  
- ```
+```
  
 bogon$ git clone https://github.com/aymericdamien/TensorFlow-Examples.git
- ```
+```
  
  运行一个CNN的例子
  
- ```
+```
  
 tensorflow) bogon:3 - Neural Networks bogon$ python convolutional_network.py 
 Succesfully downloaded train-images-idx3-ubyte.gz 9912422 bytes.
@@ -94,5 +94,5 @@ Iter 5120, Minibatch Loss= 10053.062500, Training Accuracy= 0.67188
 Iter 99840, Minibatch Loss= 738.179016, Training Accuracy= 0.91406
 Optimization Finished!
 Testing Accuracy: 0.941406
- ```
+```
 
