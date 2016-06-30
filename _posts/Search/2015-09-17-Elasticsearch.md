@@ -8,7 +8,12 @@ tags: ["distributed","Search","Elasticsearch"]
 ---
 
 ### 安装配置
-这里使用的2.3.3版本，这个版本已经不能用root启动了。需要先给Elasticsearch启动，建立一个账户
+这里使用的2.3.3版本，这个版本其实是2.x已经不能用root启动了。当也可以通过参数-Des.insecure.allow.root=true 
+```
+bin/elasticsearch  -Des.insecure.allow.root=true 
+```
+
+先给Elasticsearch启动，建立一个账户
 
 ```
 Elasticsearch运行账户：Elasticsearch
