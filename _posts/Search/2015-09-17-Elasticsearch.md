@@ -8,7 +8,7 @@ tags: ["distributed","Search","Elasticsearch"]
 ---
 
 ### 安装配置
-这里使用的2.3.3版本，这个版本其实是2.x已经不能用root直接启动了。
+这里使用的2.3.3版本，这个版本默认不能用root直接启动。
 具体参考[Bootstrap.java](https://github.com/elastic/elasticsearch/blob/93de1ed6068e8e9f35897f623efe00aa3cfafeea/core/src/main/java/org/elasticsearch/bootstrap/Bootstrap.java#L89)中的代码
 
 ```
