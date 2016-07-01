@@ -12,9 +12,17 @@ tags: ["ML","Datascience"]
 >先贴几套开源实现代码的地址,这里主要研究的2,3，其中2是c版的残差版本,3是中的MART也是残差版本实现，用到LambdaMART
 
 1. Xgboost[Xgboost源码-github](https://github.com/dmlc/xgboost/tree/master/)[Xgboost文档](https://xgboost.readthedocs.io/en/latest/)
-2. [gbdt源码下载地址-CSDN,居然10积分]http://download.csdn.net/detail/w28971023/4837775)
+2. [gbdt源码下载地址-CSDN,居然10积分](http://download.csdn.net/detail/w28971023/4837775)
 3. Ranklib[sourceforge地址](https://sourceforge.net/p/lemur/wiki/RankLib/)
 4. simple-gbdt[google code地址](https://code.google.com/archive/p/simple-gbdt/) 依赖tbb库[github 某同学fork版本](https://github.com/hcy0807/simple-gbdt)
+
+1中Xgboost支持力度很大，支持python,R，Java.etc 甚至spark
+
+2中所指gbdt是有几篇分析的文章都是用的这个版本，这个版本训练是没啥问题，不过predict的时候不友好，感觉简化了。改了下
+
+3中Ranklib支持的算法也很多，基本可以开包即用了.
+
+4中simple-gbdt，依赖tbb库.
 
 分裂：分裂后的均方误差最小
 
