@@ -7,7 +7,7 @@ category: "Datascience"
 tags: ["ML","Datascience"]
 ---
 
-谈到GBDT的时候个人认为首先应该指出是残差版本还是Gradient版本，因为在原理，求解，实现上存在一些差异（这个差异在理解上可能会导致犯迷糊，绕不少弯路）,这里主要讨论残差版本。主要研究已知的开源C版本的实现方式和Java版本的实现（Ranklib和jforests,感觉Ranklib版本的更好理解）
+谈到GBDT的时候个人认为首先应该指出是残差版本还是Gradient版本，因为在原理，求解，实现上存在一些差异（这个差异在理解上可能会导致犯迷糊，绕不少弯路）,这里主要讨论残差版本。xgboost目前也在使用，还没深入研究，这里主要研究2和3中的版本，2，3中都有源代码讲解的文章了。Ranklib的实现比较好理解。
 
 >先贴几套开源实现代码的地址,这里主要研究的2,3，其中2是c版的残差版本,3是中的MART也是残差版本实现，用到LambdaMART
 
@@ -15,6 +15,7 @@ tags: ["ML","Datascience"]
 2. [gbdt源码下载地址-CSDN,居然10积分](http://download.csdn.net/detail/w28971023/4837775)
 3. Ranklib[sourceforge地址](https://sourceforge.net/p/lemur/wiki/RankLib/)
 4. simple-gbdt[google code地址](https://code.google.com/archive/p/simple-gbdt/) 依赖tbb库[github 某同学fork版本](https://github.com/hcy0807/simple-gbdt)
+5. elf项目[sourceforge地址](http://elf-project.sourceforge.net/)
 
 1中Xgboost支持力度很大，支持python,R，Java.etc 甚至spark
 
