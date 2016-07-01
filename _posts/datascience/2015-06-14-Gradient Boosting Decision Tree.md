@@ -11,8 +11,8 @@ tags: ["ML","Datascience"]
 
 >先贴几套开源实现代码的地址,这里主要研究的2,3，其中2是c版的残差版本,3是中的MART也是残差版本实现，用到LambdaMART
 
-1. Xgboost[Xgboost源码(github)](https://github.com/dmlc/xgboost/tree/master/)[Xgboost文档](https://xgboost.readthedocs.io/en/latest/)
-2. [gbdt源码下载地址(CSDN 10积分)]http://download.csdn.net/detail/w28971023/4837775)
+1. Xgboost[Xgboost源码-github](https://github.com/dmlc/xgboost/tree/master/)[Xgboost文档](https://xgboost.readthedocs.io/en/latest/)
+2. [gbdt源码下载地址-CSDN,居然10积分]http://download.csdn.net/detail/w28971023/4837775)
 3. [Ranklib](https://sourceforge.net/p/lemur/wiki/RankLib/)
 4. simple-gbdt[google code](https://code.google.com/archive/p/simple-gbdt/)[github](https://github.com/hcy0807/simple-gbdt)
 
