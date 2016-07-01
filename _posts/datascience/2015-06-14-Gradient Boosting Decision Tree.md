@@ -96,3 +96,12 @@ protected void updateTreeOutput(RegressionTree rt)
 }
 ```
 
+参考链接
+[GBDT代码解读](http://blog.sina.com.cn/s/blog_4d1865f00101bbtl.html)
+
+[GBDT算法整理](http://blog.csdn.net/davidie/article/details/50897278)
+
+[Learning To Rank之LambdaMART的前世今生](http://blog.csdn.net/huagong_adu/article/details/40710305?utm_source=tuicool&utm_medium=referral)
+
+[RankLib源码分析](http://blog.csdn.net/guoguo881218/article/category/2805459)
+
