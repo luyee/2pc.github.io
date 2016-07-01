@@ -10,6 +10,7 @@ tags: ["ML","Datascience"]
 谈到GBDT的时候个人认为首先应该指出是残差版本还是Gradient版本，因为在原理，求解，实现上存在较大差异（因为这个差异在理解上可能会绕不少弯路）,这里主要讨论残差版本。主要研究已知的开源C版本的实现方式和Java版本的实现（Ranklib和jforests,个人感觉其中ranklib版本的更好理解）
 
 >先贴几套开源实现代码的地址,这里主要研究的2,3，其中2是c版的残差版本,3是中的MART也是残差版本实现，用到LambdaMART
+
 1. Xgboost[Xgboost源码(github)](https://github.com/dmlc/xgboost/tree/master/)[Xgboost文档](https://xgboost.readthedocs.io/en/latest/)
 2. [gbdt源码下载地址(CSDN 10积分)]http://download.csdn.net/detail/w28971023/4837775)
 3. [Ranklib](https://sourceforge.net/p/lemur/wiki/RankLib/)
