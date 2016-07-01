@@ -14,7 +14,7 @@ tags: ["ML","Datascience"]
 1. Xgboost[Xgboost源码-github](https://github.com/dmlc/xgboost/tree/master/)[Xgboost文档](https://xgboost.readthedocs.io/en/latest/)
 2. [gbdt源码下载地址-CSDN,居然10积分]http://download.csdn.net/detail/w28971023/4837775)
 3. Ranklib[sourceforge地址](https://sourceforge.net/p/lemur/wiki/RankLib/)
-4. simple-gbdt[google code地址](https://code.google.com/archive/p/simple-gbdt/)[github 某同学fork版本](https://github.com/hcy0807/simple-gbdt)
+4. simple-gbdt[google code地址](https://code.google.com/archive/p/simple-gbdt/) 依赖tbb库[github 某同学fork版本](https://github.com/hcy0807/simple-gbdt)
 
 分裂：分裂后的均方误差最小
 
