@@ -96,6 +96,23 @@ protected void updateTreeOutput(RegressionTree rt)
 }
 ```
 
+2中的代码gbdt_test.cpp 中跑test的时候尽然是一行输入一行输出？  修改了几行代码
+
+```
+char* test_file_name = argv[2];
+std::ifstream fin(test_file_name,std::ios::in)
+while(getline(fin,line))
+```
+进入gbdt的目录
+
+```
+cd lib_gbdt
+make all
+cd output/test
+./gbdt-train -r 0.8 -t 100 -s 0.03 -n 30 -d 5 -m test.model -f ../../train
+./gbdt-test ./test.model ../../train
+```
+
 参考链接
 [GBDT代码解读](http://blog.sina.com.cn/s/blog_4d1865f00101bbtl.html)
 
