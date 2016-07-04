@@ -36,7 +36,7 @@ Elasticsearch运行账户：Elasticsearch
 Elasticsearch环境路径：/data/elasticsearch
 ```
 
-新增用户并将/data/elasticsearch目录权限给Elasticsearch用户组
+新增用户并将/data/elasticsearch目录权限给Elasticsearch用户组(mac os新增用户elasticsearch，加入elasticsearch组)
 
 ```
 mkdir  /data/elasticsearch/
@@ -63,11 +63,17 @@ unzip  elasticsearch-analysis-ik-1.9.3.zip  -d  ./plugins/ik
 可以看看Breaking changes
 >
 * [2.3-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.3.html)
+
 * [2.2-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.2.html)
+
 * [2.1-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.1.html)
+
 * [2.0-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.0.html)
+
 * [1.6-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-1.6.html)
+
 * [1.4-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-1.4.html)
+
 * [1.0-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-1.0.html)
 
 参考
