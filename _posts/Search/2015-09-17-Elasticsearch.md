@@ -151,4 +151,6 @@ bash-3.2$ curl -XDELETE 'localhost:9200/customer2?pretty'
 >
 *[Elasticsearch 权威指南](http://learnes.net/index.html)
 
+*[Elasticsearch Reference2.3](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/index.html)
+
 
