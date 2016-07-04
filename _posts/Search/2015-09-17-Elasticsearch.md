@@ -190,6 +190,5 @@ bash-3.2$ curl -XPOST http://localhost:9200/index/news/1 -d '{"content":"马克�
 参考
 
 >
-
-*[Elasticsearch 权威指南](http://learnes.net/index.html)
-*[Elasticsearch Reference2.3](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/index.html)
+* [Elasticsearch 权威指南](http://learnes.net/index.html)
+* [Elasticsearch Reference2.3](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/index.html)
