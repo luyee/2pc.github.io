@@ -114,6 +114,7 @@ yellow open   indexname   5   1          1            0      7.1kb          7.1k
 yellow open   customer    5   1          1            0      3.5kb          3.5kb
 ```
 Delete an Index
+
 ```
 bash-3.2$ curl -XDELETE 'localhost:9200/customer?pretty'
 {
