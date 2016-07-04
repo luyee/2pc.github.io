@@ -130,6 +130,50 @@ bash-3.2$ curl -XDELETE 'localhost:9200/customer2?pretty'
 }
 ```
 
+ik分词测试sense建立type,news
+
+```
+curl -XPUT 'localhost:9200/index'
+```
+mapping
+
+```
+POST /index/news/_mapping -d’
+{
+  fulltext: {
+    "_all": {
+      "analyzer": "ik_max_word",
+      "search_analyzer": "ik_max_word",
+      "term_vector": "no",
+      "store": "false"
+    },
+    "properties": {
+      "content": {
+        "type": "string",
+        "store": "no",
+        "term_vector": "with_positions_offsets",
+        "analyzer": "ik_max_word",
+        "search_analyzer": "ik_max_word",
+        "include_in_all": "true",
+        "boost": 8
+      }
+    }
+  }
+}
+```
+索引
+
+```
+bash-3.2$ curl -XPOST http://localhost:9200/index/news/1 -d '{
+"content":"权力的游戏琼恩雪诺的身世彩蛋你有发现吗 琼恩雪诺的真实身世"}'
+
+bash-3.2$ curl -XPOST http://localhost:9200/index/news/1 -d '
+{"content":"iPhone 7为啥取消64GB？苹果太有心计"}'
+
+bash-3.2$ curl -XPOST http://localhost:9200/index/news/1 -d '{"content":"马克飞象是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述"}'
+
+```
+
 [2.3版本的参考文档](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/index.html)，
 
 可以看看Breaking changes
