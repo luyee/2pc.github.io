@@ -102,6 +102,7 @@ curl -XGET 'localhost:9200/indexname/indextype/1?pretty'
 }
 ```
 list All indices
+
 ```
 bash-3.2$ curl 'localhost:9200/_cat/indices?v'
 health status index     pri rep docs.count docs.deleted store.size pri.store.size
