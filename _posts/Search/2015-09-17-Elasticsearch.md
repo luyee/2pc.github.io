@@ -177,6 +177,7 @@ bash-3.2$ curl -XPOST http://localhost:9200/index/news/1 -d '{"content":"马克�
 [2.3版本的参考文档](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/index.html)，
 
 可以看看Breaking changes
+
 >
 1. [2.3-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.3.html)
 2. [2.2-Breaking changes](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/breaking-changes-2.2.html)
