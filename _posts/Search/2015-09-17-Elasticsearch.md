@@ -58,6 +58,76 @@ wget https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v1.9.3
 unzip  elasticsearch-analysis-ik-1.9.3.zip  -d  ./plugins/ik
 ```
 
+create an index,pretty 返回数据格式不一样
+```
+curl -XPUT 'localhost:9200/indexname'
+curl -XPUT 'localhost:9200/indexname?pretty'
+```
+
+Index and Query a Document
+
+index a simple indexname document，indextype
+
+```
+bash-3.2$ curl -XPUT 'localhost:9200/indexname/indextype/1?pretty' -d '
+{
+  "name": "John Doe"
+}'
+{
+  "_index" : "indexname",
+  "_type" : "indextype",
+  "_id" : "1",
+  "_version" : 3,
+  "_shards" : {
+    "total" : 2,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "created" : false
+}
+```
+retrieve that document
+
+```
+curl -XGET 'localhost:9200/indexname/indextype/1?pretty'
+{
+  "_index" : "indexname",
+  "_type" : "indextype",
+  "_id" : "1",
+  "_version" : 3,
+  "found" : true,
+  "_source" : {
+    "name" : "John Doe"
+  }
+}
+```
+list All indices
+```
+bash-3.2$ curl 'localhost:9200/_cat/indices?v'
+health status index     pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   index       5   1          0            0       795b           795b
+yellow open   customer2   5   1          0            0       795b           795b
+yellow open   twitter     5   1          0            0       795b           795b
+yellow open   db_news     5   1          1            0      4.2kb          4.2kb
+yellow open   indexname   5   1          1            0      7.1kb          7.1kb
+yellow open   customer    5   1          1            0      3.5kb          3.5kb
+```
+Delete an Index
+```
+bash-3.2$ curl -XDELETE 'localhost:9200/customer?pretty'
+{
+  "acknowledged" : true
+}
+bash-3.2$ curl -XDELETE 'localhost:9200/indexname?pretty'
+{
+  "acknowledged" : true
+}
+bash-3.2$ curl -XDELETE 'localhost:9200/customer2?pretty'
+{
+  "acknowledged" : true
+}
+```
+
 [2.3版本的参考文档](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/index.html)，
 
 可以看看Breaking changes
