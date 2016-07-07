@@ -83,8 +83,9 @@ spinf->bestsplit = tmpsplit; // split feature vale
 }
 ```
 #### 节点的输出值
+
 节点的输出值为该节点上所有sample的label的均值
-ranklib中MART的实现,在GBDT中pseudoResponses就是残差，也就是label
+Ranklib中MART的实现,在GBDT中pseudoResponses就是残差，也就是label
 
 ```
 protected void updateTreeOutput(RegressionTree rt)
