@@ -21,6 +21,7 @@ tags: ["ML","Datascience"]
 
 
 暂且简单描述下
+
 >
 * 1中Xgboost支持力度很大，支持python,R，Java.etc 甚至spark
 * 2中所指gbdt网上有几篇分析的文章都是用的这个版本，这个版本训练是没啥问题，不过predict的时候不友好，感觉简化了。修改了下
