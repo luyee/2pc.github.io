@@ -6,8 +6,11 @@ description: "Datascience Guide"
 category: "Datascience"
 tags: ["ML","Datascience"]
 ---
+#### 首先论文
 
-####  一些开源实现
+[Greedy Function Approximation: A Gradient Boosting Machine.](https://statweb.stanford.edu/~jhf/ftp/trebst.pdf)
+
+####  一些相关的开源实现
 
 先贴几套开源实现代码的地址,这里主要研究的2,3，其中2是c++版的残差版本,3中的MART也是残差版本实现，最近在做ReRank相关的事情刚好要用到LambdaMART
 
