@@ -7,9 +7,7 @@ category: "Datascience"
 tags: ["ML","Datascience"]
 ---
 
-谈到GBDT的时候个人认为首先应该指出是残差版本还是Gradient版本，因为在原理，求解，实现上存在一些差异（这个差异在理解上可能会导致犯迷糊，绕不少弯路）,这里主要讨论残差版本。xgboost目前也在使用，还没深入研究，这里主要研究2和3中的版本，2，3中都有源代码讲解的文章了。Ranklib的实现比较好理解。
-
-先贴几套开源实现代码的地址,这里主要研究的2,3，其中2是c版的残差版本,3是中的MART也是残差版本实现，用到LambdaMART
+先贴几套开源实现代码的地址,这里主要研究的2,3，其中2是c版的残差版本,3是中的MART也是残差版本实现，最近在做ReRank相关的事情刚好要用到LambdaMART
 
 >
 1. Xgboost[Xgboost源码-github](https://github.com/dmlc/xgboost/tree/master/)[Xgboost文档](https://xgboost.readthedocs.io/en/latest/)
@@ -17,14 +15,19 @@ tags: ["ML","Datascience"]
 3. Ranklib[sourceforge地址](https://sourceforge.net/p/lemur/wiki/RankLib/)
 4. simple-gbdt[google code地址](https://code.google.com/archive/p/simple-gbdt/) 依赖tbb库[github 某同学fork版本](https://github.com/hcy0807/simple-gbdt)
 5. elf项目[sourceforge地址](http://elf-project.sourceforge.net/)
+6. Spark中的实现
+>
+* 1中Xgboost支持力度很大，支持python,R，Java.etc 甚至spark
 
-1中Xgboost支持力度很大，支持python,R，Java.etc 甚至spark
+* 2中所指gbdt是有几篇分析的文章都是用的这个版本，这个版本训练是没啥问题，不过predict的时候不友好，感觉简化了。改了下
 
-2中所指gbdt是有几篇分析的文章都是用的这个版本，这个版本训练是没啥问题，不过predict的时候不友好，感觉简化了。改了下
+* 3中Ranklib支持的算法也很多，基本可以开包即用了.
 
-3中Ranklib支持的算法也很多，基本可以开包即用了.
+* 4中simple-gbdt，依赖tbb库.
 
-4中simple-gbdt，依赖tbb库.
+* Spark 中的实现
+
+讲到GBDT的时候首先应该指出是残差版本还是Gradient版本，因为在原理，求解，实现上存在一些差异（这个差异在理解上可能会导致犯迷糊，绕不少弯路）,这里主要讨论残差版本。xgboost目前也在使用，还没深入研究，这里主要研究2和3中的版本，2，3中都有源代码讲解的文章了。Ranklib的实现比较好理解。
 
 分裂：分裂后的均方误差最小
 
