@@ -114,6 +114,18 @@ cd output/test
 ./gbdt-test ./test.model ../../train
 ```
 
+GDB调试代码
+
+```
+gdb  ./gbdt-train  
+```
+可以设置参数,断点，执行
+
+```
+(gdb) set args -r 0.8 -t 100 -s 0.03 -n 30 -d 5 -m test.model -f ../../train 
+(gdb) show args
+```
+
 参考链接
 
 >
