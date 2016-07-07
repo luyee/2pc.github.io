@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gradient Boosting Decision Tree 学习笔记整理"
+title: "Gradient Boosting Decision Tree 相关学习笔记整理"
 keywords: ["ML","Datascience","LambdaMART","RankNet","RankBoost","GBDT"]
 description: "Datascience Guide"
 category: "Datascience"
