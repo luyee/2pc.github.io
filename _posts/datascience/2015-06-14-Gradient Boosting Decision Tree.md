@@ -1,13 +1,15 @@
 ---
 layout: post
-title: "Gradient Boosting Decision Tree"
+title: "Gradient Boosting Decision Tree 学习笔记整理"
 keywords: ["ML","Datascience","LambdaMART","RankNet","RankBoost","GBDT"]
 description: "Datascience Guide"
 category: "Datascience"
 tags: ["ML","Datascience"]
 ---
 
-先贴几套开源实现代码的地址,这里主要研究的2,3，其中2是c版的残差版本,3是中的MART也是残差版本实现，最近在做ReRank相关的事情刚好要用到LambdaMART
+####  一些开源实现
+
+先贴几套开源实现代码的地址,这里主要研究的2,3，其中2是c++版的残差版本,3中的MART也是残差版本实现，最近在做ReRank相关的事情刚好要用到LambdaMART
 
 >
 1. Xgboost[Xgboost源码-github](https://github.com/dmlc/xgboost/tree/master/)[Xgboost文档](https://xgboost.readthedocs.io/en/latest/)
@@ -23,13 +25,14 @@ tags: ["ML","Datascience"]
 * 2中所指gbdt是有几篇分析的文章都是用的这个版本，这个版本训练是没啥问题，不过predict的时候不友好，感觉简化了。改了下
 * 3中Ranklib支持的算法也很多，基本可以开包即用了.
 * 4中simple-gbdt，依赖tbb库.
-* Spark 中的实现
+* Spark中的实现
 
-讲到GBDT的时候首先应该指出是残差版本还是Gradient版本，因为在原理，求解，实现上存在一些差异（这个差异在理解上可能会导致犯迷糊，绕不少弯路）,这里主要讨论残差版本。xgboost目前也在使用，还没深入研究，这里主要研究2和3中的版本，2，3中都有源代码讲解的文章了。Ranklib的实现比较好理解。
+讲到GBDT的时候首先应该指出是残差版本还是Gradient版本，因为在原理，求解，实现上存在一些差异（这个差异在理解上可能会导致犯迷糊,反正自己绕不少弯路）,这里主要讨论残差版本。xgboost目前也在使用，还没深入研究，这里主要研究2和3中的版本。2，3也有讲解源代码的文章了。Ranklib的实现比较好理解。
 
-分裂：分裂后的均方误差最小
+#### 随机选取Future问题
 
 随机选择rand_fea_num个特征进行分裂，确定最优的分裂特性
+2中C++代码实现
 
 ```
 for (int i = 0; i < gbdt_inf.rand_fea_num; ++i) 
@@ -38,13 +41,17 @@ for (int i = 0; i < gbdt_inf.rand_fea_num; ++i)
  }
 ```
 
-Best split计算
+#### 分裂问题，
+
+分裂：分裂后的均方误差最小
+
+Best split标准计算依据
 
 计算公式：
 
 ![游园惊梦-GBDT原理实例演示 2](http://images.cnitblog.com/blog/61573/201503/251821497246538.png)
 
-代码实现
+2中C++代码实现
 
 ```
 for (int j=ninf.index_b; j< ninf.index_e; j++)
