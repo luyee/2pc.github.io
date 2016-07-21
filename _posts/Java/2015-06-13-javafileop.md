@@ -9,6 +9,17 @@ tags : [Java, File, tools]
 
 #### 读取CSV文件
 
+依赖
+
+```
+<dependency>
+	<groupId>net.sf.opencsv</groupId>
+	<artifactId>opencsv</artifactId>
+	<version>2.3</version>
+</dependency>
+```
+读取文件
+
 ```
  public static void main(String[] args)  {
   	String name = "C:/Users/Desktop/suggest.csv";
