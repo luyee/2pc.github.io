@@ -7,9 +7,11 @@ tags : [Java, File, tools]
 ---
 
 
+#### 读取CSV文件
+
 ```
  public static void main(String[] args)  {
-  	String name = "C:/Users/luping/Desktop/suggest.csv";
+  	String name = "C:/Users/Desktop/suggest.csv";
   	 Reader inputStreamReader;
 	try {
 		inputStreamReader = new InputStreamReader(new FileInputStream(new java.io.File(name)));
