@@ -1,3 +1,12 @@
+---
+title: Java File OP
+tagline: ""
+category : Java
+layout: post
+tags : [Java, File, tools]
+---
+
+
 ```
  public static void main(String[] args)  {
   	String name = "C:/Users/luping/Desktop/suggest.csv";
