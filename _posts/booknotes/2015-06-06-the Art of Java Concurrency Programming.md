@@ -25,6 +25,7 @@ vmstat 命令显示CS(Content Switch),表示上下文切换次数
 #### 2.1 volatile的两条实现原则
 >
 1.Lock前缀指令会引起处理器缓存回写到内存
+
 2.一个处理器的缓存回写到内存会导致其他处理器的缓存实效，MESI(修改，独占，共享，无效)
 
 #### 2.2 synchronized实现原理与应用
@@ -33,6 +34,7 @@ vmstat 命令显示CS(Content Switch),表示上下文切换次数
 2.3.3
 >
 1.使用CAS实现愿次操作，基本思路：循环到进行CAS操作成功为止
+
 2.CAS操作三大问题 ABA-->1A-2B-3A,循环时间长开销大，只能保证一个共享变量的原子操作
 
 ## 第三章 Java内存模型
@@ -51,6 +53,7 @@ vmstat 命令显示CS(Content Switch),表示上下文切换次数
 >
 1.可见性；
 2.原子性： 对任意单个valatile变量的读/写具有原子性，比如valatile++ 这种符合操作不具有原子性
+
 #### 3.4.2 volatile 写－读建立的happens-before关系
 #### 3.4.3 volatile 写－读的内存语义
 #### 3.4.3 volatile 写－读的内存语义的实现
