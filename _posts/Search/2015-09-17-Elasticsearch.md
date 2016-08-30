@@ -199,5 +199,7 @@ boolean查询must,should,must_not
 参考
 
 >
+* [Search in Depth](https://www.elastic.co/guide/en/elasticsearch/guide/current/search-in-depth.html)
 * [Elasticsearch 权威指南](http://learnes.net/index.html)
 * [Elasticsearch Reference2.3](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/index.html)
+* [Elasticsearch 权威指南翻译](http://blog.csdn.net/dm_vincent/article/details/46994535)
