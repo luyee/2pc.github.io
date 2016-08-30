@@ -176,7 +176,8 @@ bash-3.2$ curl -XPOST http://localhost:9200/index/news/1 -d '{"content":"马克�
 
 查询
 
-boolean查询must,should,must_not、
+boolean查询must,should,must_not
+>
 1. must: 文档必须完全匹配条件
 2. should: should下面会带一个以上的条件，至少满足一个条件，这个文档就符合should
 3. must_not: 文档必须不匹配条件
