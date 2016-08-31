@@ -171,6 +171,12 @@ bash-3.2$ curl -XPOST http://localhost:9200/index/news/1 -d '
 {"content":"iPhone 7为啥取消64GB？苹果太有心计"}'
 
 bash-3.2$ curl -XPOST http://localhost:9200/index/news/1 -d '{"content":"马克飞象是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述"}'
+curl -XPOST http://localhost:9200/index/news/3 -d '{"content":"身高差近30cm,王子文是怎么穿上吴亦凡的衣服的"}'
+curl -XPOST http://localhost:9200/index/news/4 -d '{"content":"霍建华胡歌邓超李易峰吴亦凡黄晓明 颜高任性！那些不受发型限制的男星"}'
+curl -XPOST http://localhost:9200/index/news/2 -d '{"content":"《欧洲攻略》热拍 梁朝伟吴亦凡唐嫣现身"}'
+curl -XPOST http://localhost:9200/index/news/1 -d '{"content":"吴亦凡被爆签约华谊 TFBOYS真实相貌疑曝光"}'
+curl -XPOST http://localhost:9200/index/news/5 -d '{"content":"干了6年都不觉得人家不称职，从冯大辉加入一路产品高歌猛进，融资一轮比一轮顺，都没觉得人家不称职，现在人家要走了，要兑现你许下的期权，人就突然不称职了，钱啊，真是照妖镜
+啊"}'
 
 ```
 
