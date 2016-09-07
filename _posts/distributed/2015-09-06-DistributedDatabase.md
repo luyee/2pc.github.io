@@ -7,4 +7,7 @@ category: "distributed"
 tags: ["distributed"]
 ---
 #### TiDB-A Distributed SQL Database
-![Architecture](https://github.com/pingcap/tidb/raw/master/docs/architecture.png)
+
+[TiDB-A Distributed SQL Database](https://github.com/pingcap/tidb/)
+
+[cockroach](https://github.com/cockroachdb/cockroach/)
