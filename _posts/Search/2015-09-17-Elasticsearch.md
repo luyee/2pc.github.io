@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Elasticsearch"
+title: "Elasticsearch笔记"
 keywords: ["distributed","Search"]
 description: "Elasticsearch"
 category: "distributed"
